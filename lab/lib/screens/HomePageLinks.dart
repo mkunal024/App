@@ -6,7 +6,7 @@ class HomePageLinks extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      width:150,
+      width:100,
       decoration: BoxDecoration(
         border: Border.all(color: Colors.black, width:2.0,),
       ),

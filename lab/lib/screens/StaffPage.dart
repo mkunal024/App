@@ -21,13 +21,13 @@ class _StaffPageState extends State<StaffPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Staff Page'),
+        title: const Text('Staff Page'),
       ),
       body: FutureBuilder<List<Staff>>(
         future: staffList,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else {

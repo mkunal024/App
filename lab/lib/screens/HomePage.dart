@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
         title: Text('Lab'),
         backgroundColor: Colors.orange,
         centerTitle: true,
+       // leading: Container(child: const Text('logo here'),),
       ),
       drawer: Drawer(
         child: ListView(
@@ -49,7 +50,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   SizedBox(width: 20,),
                   HomePageLinks(),
-                  SizedBox(width: 20,),
+                  SizedBox(width: 65,),
                  Column(children: [
                    InkWell(
                      onTap: () {
