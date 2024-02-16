@@ -11,9 +11,9 @@ State<StatefulWidget> createState() => SliderWidgetState();
 
 class SliderWidgetState extends State<SliderWidget>{
   List imageList=[
-    {"id":1,"image_path":'assets/images/image1.png'},
-    {"id":2,"image_path":'assets/images/image2.jpg'},
-    {"id":3,"image_path":'assets/images/image3.jpg'}
+    {"id":1,"image_path":'assets/images/slider1.png'},
+    {"id":2,"image_path":'assets/images/slider2.jpg'},
+    {"id":3,"image_path":'assets/images/slider3.png'}
   ];
   final CarouselController carouselController = CarouselController();
   int currentIndex=0;

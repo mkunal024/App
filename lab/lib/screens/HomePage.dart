@@ -44,12 +44,12 @@ class HomePage extends StatelessWidget {
           scrollDirection: Axis.vertical,
           child: Column(
             children: [
-            SliderWidget(),
-              SizedBox(height: 20,),
+            Container(height:MediaQuery.of(context).size.height,width: MediaQuery.of(context).size.width * 0.8, child: SliderWidget()),
+             // SizedBox(height: 20,),
               Row(
                 children: [
-                  SizedBox(width: 20,),
-                  HomePageLinks(),
+                  //SizedBox(width: 20,),
+                  Container(height: MediaQuery.of(context).size.height * 0.42, width: MediaQuery.of(context).size.width * 0.4, child: HomePageLinks()),
                   SizedBox(width: 65,),
                  Column(children: [
                    InkWell(
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                        Navigator.push(context, MaterialPageRoute(builder: (context) => ProjectPage(),),);
                      },
                      child: Container(
-                       height: 90, width: 150,
+                       height: MediaQuery.of(context).size.height * 0.2, width: MediaQuery.of(context).size.width * 0.5,
                        decoration: BoxDecoration(
                          //color: Colors.red,
                          border: Border.all(color: Colors.black, width: 2.0),
@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                        Navigator.push(context, MaterialPageRoute(builder: (context) => StaffPage(),),);
                      },
                      child: Container(
-                       height: 90, width: 150,
+                       height: MediaQuery.of(context).size.height * 0.2, width: MediaQuery.of(context).size.width * 0.5,
                        decoration: BoxDecoration(
                          //color: Colors.red,
                          border: Border.all(color: Colors.black, width: 2.0),
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                      ),
                    ),
           ],
-        ),
+                  ),
                 ],
               ),
               SizedBox(height: 20,),
